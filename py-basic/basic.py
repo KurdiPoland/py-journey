@@ -61,5 +61,16 @@ for i in "banana":
     print(i)
 
 #for loop using range
-for x in range(2,5,1):
+for x in range(2,10,2):
     print(x)
+
+language="python"
+match language:
+    case "python":
+        print("you choose python")
+    case "java":
+        print("you choose java")
+    case "golang":
+        print("you choose golang")
+    case default:
+        print("No choose lang")

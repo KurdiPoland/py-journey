@@ -75,3 +75,45 @@ fruits = ["apple", "orange", "ananas"]
 
 for i, v in enumerate(fruits, start = 2):
     print(f"Index: {i}, Value {v}")
+
+#dane struktury
+carsdict = {
+    "Renault":["Megane", "Koleos", "Espase"],
+    "BMW":["X3","X2","X1"],
+    "Mercedes":["A Class","B Class","C Class"]
+}
+
+for x in carsdict:
+    print(f"Brand {x}")
+    for v in carsdict[x]:
+        print(f"Model {v}")
+
+#join function
+cities = ["Amsterdam", "Tokyo", "Rio de Janeiro", "Los Angeles"]
+allcities = ",".join(cities)
+print(f"All cities {allcities}")
+
+#print len of array
+print(len(cities))
+
+#print len of word
+print(len(allcities))
+#String end with some str .endswith()
+emails = ['john.doe@gmail.com', 'mark.twain@company.com', 'mrwonderful@outlook.com']
+postfix = "company.com"
+for x in emails:
+    print(x)
+    if x.endswith("company.com"):
+        print(f"the {x} should be blocked")
+    else:
+        print(f"the {x} allow")
+prefix = "com"
+postfix = "star"
+packages = ["com.package.main", "com.package.car", "eu.package.star"] 
+for x in packages:
+    if x.startswith(prefix):
+        print(f"the { x } String starts with { prefix }")
+    elif x.endswith(postfix):
+        print(f"the { x } String starts with { postfix }")
+    else:
+        print(f"the {x} No patterns found")
