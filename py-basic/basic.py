@@ -32,11 +32,31 @@ elif c==d:
 else: 
     print("Max", c) 
 
+# if else in in short-hand
+
+max = c if c > d else d
+
 #Arrrays in python
 cars = ["Ford", "Volvo", "BMW"]
 
 for v in cars:
     print(v)
+
+# set czyli zbiory
+#zbiory nie tolerują duplikatów
+simpleword = "geografical" 
+simplewerdasset = set(simpleword) #konwersja na zbiór
+print(simplewerdasset)
+print(sorted(simplewerdasset)) #posortowanie zbioru
+otherset=set('norwey')
+print(simplewerdasset.union(otherset)) #łączenie zbiorów
+print(simplewerdasset.difference(otherset)) #wyswietlenie czesci która nie jest wspólna
+print(simplewerdasset.intersection(otherset)) #wyswietlenie czesci która nie jest wspólna
+
+#tuple , krotka, object ten nie może być zmieniony po jego powstaniu
+vowels2 = ( 'a', 'e', 'i', 'o', 'u' )
+type(vowels2)
+#vowels2[2] = 'i' #spróbuj zmienić jakiś element w tuple, zostanie wyświetlony błąd
 
 #loops
 count=5
@@ -74,3 +94,4 @@ match language:
         print("you choose golang")
     case default:
         print("No choose lang")
+
